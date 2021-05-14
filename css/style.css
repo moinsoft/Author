@@ -86,3 +86,74 @@ Header Part
   opacity: 1;
   width: 50%;
 }
+
+/*==========================
+Slider Part 
+============================*/
+
+.single__slider{
+  position: relative;
+}
+
+.slider__img img{
+  width: 100%;
+}
+
+.slider__text{
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider__text h1{
+  font-size: 63px;
+  font-weight:600;
+  color: #ffffff;
+  margin-bottom: 45px;
+}
+
+.slider__text p{
+  color: #ffffff;
+  margin-bottom: 65px;
+  font-size:25px;
+  line-height: 35px;
+}
+
+.slider__text a{
+  text-decoration: none;
+  font-size: 30px;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.owl-carousel .owl-nav button{
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  background: #ffffff !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+
+.owl-carousel .owl-nav button span{
+  color: #000000;
+  font-size: 40px;
+}
+
+
+.owl-carousel .owl-nav .owl-prev{
+  left: 50px;
+}
+
+
+.owl-carousel .owl-nav .owl-next{
+  right: 50px;
+}
