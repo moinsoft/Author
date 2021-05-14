@@ -11,3 +11,78 @@ body{
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 400;
 }
+
+
+.container{
+  width: 1170px;
+  margin: auto;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+
+/*==========================
+Header Part 
+============================*/
+
+.logo {
+	flex-grow: 1;
+}
+
+.menu ul{
+  list-style: none;
+  
+}
+
+.menu ul li {
+	display: inline-block;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: #484c55;
+	font-size: 20px;
+	padding: 30px 20px;
+	display: block;
+  transition:all .3s linear;
+  position: relative;
+}
+
+.menu ul li a:hover{
+  color: #49cbcd;
+  background: #f8f9fb;
+}
+
+.menu ul li a::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #49cbcd;
+  bottom:0;
+  left: 0;
+  transition:all .3s linear;
+  opacity: 0;
+}
+
+.menu ul li a::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #49cbcd;
+  bottom:0;
+  right: 0;
+  transition:all .3s linear;
+  opacity: 0;
+}
+
+.menu ul li a:hover::before, .menu ul li a:hover::after{
+  opacity: 1;
+  width: 50%;
+}
