@@ -20,11 +20,28 @@ body{
 
 .flex{
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  
 }
 
+.section__padding{
+  padding: 100px 0;
+}
+
+.btn{
+  text-decoration: none;
+  background: #49cbcd;
+  border: 3px solid #49cbcd;
+  color: #ffffff;
+  padding: 7px 17px;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: all 0.5s linear;
+}
+
+.btn:hover{
+  background: none;
+  color: #49cbcd;
+}
 
 /*==========================
 Header Part 
@@ -157,3 +174,49 @@ Slider Part
 .owl-carousel .owl-nav .owl-next{
   right: 50px;
 }
+
+/*==========================
+Service Part
+============================*/
+
+.single__service{
+  text-align: center;
+  padding: 0 15px;
+}
+
+.service__icon{
+  margin-bottom: 30px;
+}
+
+
+.service__icon i {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #49cbcd;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #49cbcd;
+  line-height: 96px;
+  transition: all 0.3s linear;
+}
+
+.service__icon i:hover{
+  transform: rotate(360deg);
+}
+
+
+.service__info{}
+
+
+.service__info h3{
+  font-size:30px;
+  margin-bottom: 30px;
+}
+
+
+.service__info p{
+  font-size:18px;
+  margin-bottom: 50px;
+  line-height: 26px;
+}
+
