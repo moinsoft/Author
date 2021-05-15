@@ -239,4 +239,9 @@ Portfolio Part
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px 30px;
+  margin-bottom: 70px;
+}
+
+.btn__portfolio{
+  text-align: center;
 }
