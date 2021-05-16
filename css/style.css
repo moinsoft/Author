@@ -36,6 +36,7 @@ body{
   font-size: 20px;
   border-radius: 5px;
   transition: all 0.5s linear;
+  display:inline-block ;
 }
 
 .btn:hover{
@@ -335,4 +336,79 @@ Team Part
 
 .team__name span{
   line-height: 40px;
+}
+
+/*==========================
+Pricing Table Part
+============================*/
+
+.pricing__table__part{
+  background: #f1f1f1;
+}
+
+.pricing__table{
+  justify-content:space-between;
+}
+
+.single__pricing__table{
+  text-align: center;
+  transition: all 0.3s linear;
+}
+
+.single__pricing__table:hover{
+  box-shadow: 0 0 20px gray;
+}
+
+
+.single__pricing__table h2{
+  background: #485460;
+  color: #ffffff;
+  font-size: 26px;
+  padding: 20px 150px;
+  transition: all 0.3s linear;
+}
+
+
+.single__pricing__table span{
+  background: #f8f9fb;
+  color: #485460;
+  font-size: 20px;
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+
+.single__pricing__table ul{
+  background: #ffffff;
+  list-style: none;
+}
+
+
+.single__pricing__table ul li{
+  color: #8c9299;
+  padding: 20px 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+
+
+.pricing__btn__bg{
+  background: #f8f9fb;
+  padding: 30px 0;
+}
+
+.pricing__btn{
+  background: #788492;
+  padding: 15px 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size:20px;
+  display:inline-block ;
+  transition: all 0.3s linear;
+}
+
+.single__pricing__table:hover.single__pricing__table h2, .single__pricing__table:hover .pricing__btn{
+  background: #49cbcd;
 }
