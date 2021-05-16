@@ -35,7 +35,7 @@ body{
   padding: 7px 17px;
   font-size: 20px;
   border-radius: 5px;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   display:inline-block ;
 }
 
@@ -389,6 +389,12 @@ Pricing Table Part
   color: #8c9299;
   padding: 20px 0;
   border-bottom: 1px solid #ecf0f1;
+  transition: all 0.3s linear;
+}
+
+.single__pricing__table ul li:hover{
+  background: #49cbcd;
+  color: #000000;
 }
 
 
