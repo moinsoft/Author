@@ -152,32 +152,41 @@ Slider Part
   border: 3px solid #ffffff;
   border-radius: 5px;
   padding: 10px 20px;
+  transition: all 0.3s linear;
 }
 
-.owl-carousel .owl-nav button{
+.slider__text a:hover{
+  background: #49cbcd;
+  border: 3px solid #49cbcd;
+}
+
+.owl-carousel .owl-nav button span {
   width: 60px;
   height: 60px;
-  line-height: 60px;
+  line-height: 52px;
   border-radius: 50%;
   background: #ffffff !important;
+  border: 3px solid #ffffff;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  
-}
-
-.owl-carousel .owl-nav button span{
   color: #49cbcd;
   font-size: 40px;
+  transition: all 0.3s linear;
+}
+
+.owl-carousel .owl-nav button span:hover{
+  color: #ffffff;
+  background: #49cbcd !important;
 }
 
 
-.owl-carousel .owl-nav .owl-prev{
+.owl-carousel .owl-nav .owl-prev span{
   left: 50px;
 }
 
 
-.owl-carousel .owl-nav .owl-next{
+.owl-carousel .owl-nav .owl-next span{
   right: 50px;
 }
 
@@ -210,10 +219,6 @@ Service Part
   transform: rotate(360deg);
 }
 
-
-.service__info{}
-
-
 .service__info h3{
   font-size:30px;
   margin-bottom: 30px;
@@ -244,4 +249,90 @@ Portfolio Part
 
 .btn__portfolio{
   text-align: center;
+}
+
+/*==========================
+Team Part
+============================*/
+
+.team__part{
+  padding-bottom: 100px;
+}
+
+.single__team{
+  padding: 0 15px;
+  text-align: center;
+}
+
+.team__img a{
+  width: 201px;
+  height: 201px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.team__img a::before{
+  content: "";
+  position: absolute;
+  background: #eeeef0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.9;
+  transform: scale(0);
+  transition: all 0.3s linear;
+}
+
+.team__img a:hover::before{
+  transform: scale(1);
+  border: 3px solid #49cbcd;
+  box-shadow: 0px 0px 60px #49cbcd; 
+}
+
+.team__img a::after {
+  content: "\f067";
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 60px;
+  color: #f46d6d;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-40%);
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.team__img a:hover::after {
+  opacity: 1;
+}
+
+.team__img img{
+  border-radius: 50%;
+  background: #eeeef0;
+  border: 3px solid #ffffff;
+  box-shadow: 10px 10px 40px gray;
+}
+
+
+
+.team__info p{
+  font-size:16px;
+  line-height: 26px;
+  margin-top: 25px;
+}
+
+.team__name{
+  margin: 30px 0;
+}
+
+
+.team__name h3{
+  font-size:30px;
+}
+
+.team__name span{
+  line-height: 40px;
 }
