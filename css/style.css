@@ -655,3 +655,34 @@ h1.section__title__white{
   border: none;
   cursor: pointer;
 }
+
+/*==========================
+Jump To Top Button
+============================*/
+
+
+.jump__to__top{
+  float: right;
+  margin: 20px 40px 0 0;
+}
+
+.jump__to__top a{
+  font-size: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  background:#282A36;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  box-shadow: 0 0 1px 1.5px red;
+  transition: all .3s linear;
+}
+
+
+.jump__to__top a:hover{
+  color: red;
+  box-shadow: 0 0 3px 2px red;
+}
