@@ -47,7 +47,11 @@ body{
 .section__title{
   text-align: center;
   padding: 70px 0;
-  font-size: 35px;
+  color: #4e525d;
+}
+
+.section__title h1{
+  font-size: 42px;
   color: #4e525d;
 }
 
@@ -504,4 +508,150 @@ Testimonial Slider Part
 .testimonial__slider__active .owl-dots .owl-dot:hover,
 .testimonial__slider__active .owl-dots .owl-dot.active{
   background: #49cbcd;
+}
+
+/*==========================
+Footer Part
+============================*/
+
+.footer__part{
+  background-image: url(../assets/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+h1.section__title__white{
+  color: #ffffff;
+}
+
+.contact{
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact__info, .contact__form{
+  width: 50%;
+  padding: 0 15px;
+}
+
+.contact__info h2{
+  font-size: 24px;
+  color:#ffffff;
+  font-weight: 400;
+}
+
+
+.contact__info p{
+  font-size: 16px;
+  color:#ffffff;
+  margin: 30px 0;
+  line-height: 25px;
+}
+
+
+.social__icon a{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin:0 10px 30px 10px;
+  transition: all 0.3s linear;
+}
+
+.social__icon a:first-child{
+  margin-left: 0;
+}
+
+.social__icon a.facebook{
+  background: #3b5997;
+}
+
+
+.social__icon a.twitter{
+  background: #3ec2f3;
+}
+
+
+.social__icon a.google__plus{
+  background: #e44c41;
+}
+
+
+.social__icon a:hover{
+  box-shadow: 0px 0px 5px #ffffff;
+  transform:rotate(360deg);
+}
+
+
+.address ul{
+  list-style: none;
+}
+
+.address ul li{
+  color: #bface2;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.address ul li a{
+  color: #bface2;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.address ul li a:hover{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.input__field{
+  justify-content: space-between;
+}
+
+
+.name, .email{
+  width: 48%;
+}
+
+.name input, .email input{
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 30px; 
+}
+
+.message__box textarea{
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+}
+
+.name input::placeholder, .email input::placeholder, .message__box textarea::placeholder{
+  color: #49cbcd;
+  font-size: 17px;
+}
+
+
+.btn__send__reset{
+  text-align: center;
+}
+.btn__send__reset button{
+  background: #49cbcd;
+  padding: 10px 65px;
+  margin: 0 1%;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size:20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
